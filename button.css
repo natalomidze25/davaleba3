@@ -1,0 +1,65 @@
+:root {
+    --fontSize: 16px;
+}
+
+html, body {
+var(--fontSize);
+}
+
+.button-div {
+    padding: 0.5rem;
+}
+
+.btn {
+    --bgColor: #6200ee;
+    --textColor: white;
+    --textSize: 2rem;
+    --paddingBottom: 0.5rem;
+    --paddingTop: 0.5rem;
+    --space: 1em;
+
+    background-color: var(--bgColor);
+    padding: var(--space);
+    color: var(--textColor);
+    font-size: var(--textSize);
+    cursor: pointer;
+}
+
+.btn.btn--text {
+    border: none;
+    --textColor: #6200ee;
+    background-color: transparent;
+    padding: 0.5em;
+    border-radius: 0.3rem;
+}
+
+.btn--text:hover {
+    background-color: rgba(212, 189, 241, 0.61);
+    border-radius: 0.3rem;
+}
+
+.btn:focus {
+    box-shadow: 0 0.4rem 0.4rem 0.19rem rgba(0, 0, 0, 0.2), 0 0.5rem 0.6rem 0.06rem rgba(0, 0, 0, 0.14), 0 0.19rem 0.87rem 0.12rem rgba(0, 0, 0, 0.12);
+    background-color: rgba(212, 189, 241, 0.61);
+}
+
+.btn.btn--outlined {
+    outline: 2px solid grey;
+    border-radius: 0.5rem;
+}
+
+.btn--outlined:hover {
+    outline: 0.15rem solid grey;
+}
+
+.btn.btn--contained {
+    border: none;
+    border-radius: 0.6rem;
+}
+.btn.btn--contained:hover{
+    box-shadow:0 0.5rem 0.6rem 0.16rem #716c6c;
+}
+.btn.btn--contained:focus{
+    background-color: rgba(98, 0, 238, 0.76);
+    box-shadow:0 0.5rem 0.6rem 0.16rem #716c6c;
+}
